@@ -22,7 +22,7 @@ RUN mkdir /perf && cd /perf && curl -OL https://aka.ms/perfcollect && chmod +x p
 
 # Install perf and LTTng dependencies.
 
-RUN apt-get -y install linux-tools-common linux-tools-generic -r` linux-cloud-tools-generic -r` lttng-tools lttng-modules-dkms liblttng-ust0 zip 
+RUN apt-get -y install linux-tools-common linux-tools-generic  linux-cloud-tools-common  lttng-tools lttng-modules-dkms liblttng-ust0 zip 
 
 # Set tracing environment variables.
 ENV COMPlus_PerfMapEnabled 1
